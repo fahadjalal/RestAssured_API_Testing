@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static org.hamcrest.Matchers.hasItem;
 
-public class Testing_Api {
+public class Get_Assertion {
     @Test
     public void test_Get()
     {

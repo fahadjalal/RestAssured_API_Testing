@@ -1,3 +1,5 @@
+package Session_Get_Post_Put_Delete;
+
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;

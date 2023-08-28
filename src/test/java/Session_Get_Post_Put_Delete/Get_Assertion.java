@@ -1,3 +1,5 @@
+package Session_Get_Post_Put_Delete;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;

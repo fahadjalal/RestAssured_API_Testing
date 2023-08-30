@@ -11,7 +11,7 @@ public class Task_1 {
     @Test
     public void Get_Items(){
         RestAssured.baseURI = "https://reqres.in/api";
-       Response response = RestAssured.given()
+        Response response = RestAssured.given()
                .get("/users?page=2")
                .then()
                .extract()

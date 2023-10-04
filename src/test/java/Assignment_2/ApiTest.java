@@ -28,7 +28,6 @@ public class ApiTest extends BaseTest{
                 .extract()
                 .response();
 
-        // Additional assertions if needed
     }
     @Test
     public void LoginUser() {
@@ -81,7 +80,6 @@ public class ApiTest extends BaseTest{
         // Validate Response Time
         response.then().time(lessThan(10000L));
 
-        // Additional assertions if needed
     }
 
 

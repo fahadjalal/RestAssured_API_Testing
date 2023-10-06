@@ -1,5 +1,6 @@
 package Assignment_2;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -16,6 +17,7 @@ public class BaseTest {
 
     @BeforeClass
     public static void setup() {
+        RestAssured.filters(new AllureRestAssured());
         RestAssured.baseURI = "http://restapi.adequateshop.com";
 
         requestSpec = new RequestSpecBuilder()
